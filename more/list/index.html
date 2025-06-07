@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unblocked Games Hub - Play Freely!</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #1a202c; /* Darker background for more depth */
+      color: #e2e8f0; /* Lighter text for better contrast */
+    }
+    .game-card {
+      background-color: #2d3748; /* Slightly lighter card background */
+      border-radius: 1rem; /* More pronounced rounded corners */
+      padding: 1.5rem; /* Increased padding */
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+      transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+      display: flex; /* Use flexbox for internal alignment */
+      align-items: center; /* Vertically center items */
+      justify-content: space-between; /* Space between link and status (if present) */
+    }
+    .game-card:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+      background-color: #4a5568; /* Darken on hover */
+    }
+    .game-title {
+      font-weight: 600; /* Slightly bolder game titles */
+      color: #90cdf4; /* Brighter blue for titles */
+      flex-grow: 1; /* Allow the title to take up available space */
+      overflow: hidden; /* Hide overflow to prevent long URLs from breaking layout */
+      white-space: nowrap; /* Prevent title from wrapping */
+      text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    }
+    .game-status {
+      font-size: 0.875rem; /* Smaller status text */
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px; /* Pill shape */
+      margin-left: 0.75rem;
+      flex-shrink: 0; /* Prevent status from shrinking */
+    }
+    .status-working {
+      background-color: #38a169; /* Green for working */
+      color: #fff;
+    }
+    .status-unknown {
+      background-color: #ecc94b; /* Yellow for unknown */
+      color: #1a202c;
+    }
+    .animate-gradient {
+      background: linear-gradient(90deg, #63b3ed, #805ad5, #dd6b20);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient-flow 3s ease infinite;
+    }
+    @keyframes gradient-flow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Responsive Grid for Game Links */
+    .game-grid {
+      display: grid;
+      gap: 1.5rem; /* Space between grid items */
+      grid-template-columns: repeat(1, minmax(0, 1fr)); /* Default 1 column on small screens */
+    }
+
+    @media (min-width: 640px) { /* sm breakpoint */
+      .game-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns on small-medium screens */
+      }
+    }
+
+    @media (min-width: 1024px) { /* lg breakpoint */
+      .game-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on large screens */
+      }
+    }
+    @media (min-width: 1280px) { /* xl breakpoint */
+      .game-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columns on extra large screens */
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col min-h-screen">
+  <header class="py-6 px-4 bg-gray-800 shadow-md">
+    <div class="container mx-auto flex justify-center items-center">
+      <h1 class="text-5xl font-extrabold animate-gradient text-center">
+        🎮 Unblocked Games Hub
+      </h1>
+    </div>
+  </header>
+
+  <main class="flex-grow flex flex-col items-center px-4 py-12">
+    <p class="text-xl text-gray-300 mb-10 text-center max-w-2xl">
+      Your gateway to fun, unblocked games! Enjoy a seamless gaming experience, no matter where you are.
+    </p>
+
+    <ul class="game-grid w-full max-w-6xl mx-auto">
+      <li class="game-card">
+        <a href="https://unblocker.whitespider.gq/" target="_blank" class="game-title hover:underline">unblocker.whitespider.gq/</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unlock.wmeluna.com/" target="_blank" class="game-title hover:underline">unlock.wmeluna.com/</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://sz-games.github.io" target="_blank" class="game-title hover:underline">sz-games.github.io</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://593d4d43-3073-45d0-86e2-0443d15adf21.id.repl.co/games/mario64/index.html" target="_blank" class="game-title hover:underline">Mario 64 (Repl.co)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ubg100.bitbucket.io/games.html" target="_blank" class="game-title hover:underline">ubg100.bitbucket.io/games.html</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://suite.saltyspamz.xyz/" target="_blank" class="game-title hover:underline">suite.saltyspamz.xyz/</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathadventure1.github.io/sm64/sm64/index.html" target="_blank" class="game-title hover:underline">Mario 64 (MathAdventure)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://picklekid31.github.io/GBA-unblocked-games/" target="_blank" class="game-title hover:underline">GBA Unblocked Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://jonahkc.github.io/youtube-unblcked/" target="_blank" class="game-title hover:underline">YouTube Unblocked</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://cattn.github.io/gba/" target="_blank" class="game-title hover:underline">Cattn GBA</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://28klotlucas2.github.io/Mario64webgl/" target="_blank" class="game-title hover:underline">Mario 64 WebGL</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://emulatoros.github.io/" target="_blank" class="game-title hover:underline">Emulator OS</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://abc6782.github.io/core-html/games.html" target="_blank" class="game-title hover:underline">Core HTML Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://blaizerbrumo.github.io/School-Heaven/public/index.html" target="_blank" class="game-title hover:underline">School Heaven</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://browncha023.github.io/GBA/" target="_blank" class="game-title hover:underline">Browncha GBA</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://jetyehsunblocked.codehs.me/" target="_blank" class="game-title hover:underline">Jetyehsunblocked</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://593d4d43-3073-45d0-86e2-0443d15adf21.id.repl.co/" target="_blank" class="game-title hover:underline">Repl.co Hub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://superteamxx.github.io/Subway-Surfers/" target="_blank" class="game-title hover:underline">Subway Surfers</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ytunblock.weebly.com/" target="_blank" class="game-title hover:underline">YT Unblock (Weebly)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gamerateofficial.weebly.com/" target="_blank" class="game-title hover:underline">Gamerate Official</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ytunblockerv10.weebly.com/" target="_blank" class="game-title hover:underline">YT Unblocker V10</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unblockedgames1147.weebly.com/games.html" target="_blank" class="game-title hover:underline">Unblocked Games 1147</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://odd.gay/games/" target="_blank" class="game-title hover:underline">Odd Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://superteamxx.github.io/GBA-Emulator-Unblocked/" target="_blank" class="game-title hover:underline">GBA Emulator Unblocked</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://yologolosolo.github.io/projects.html" target="_blank" class="game-title hover:underline">Yologolosolo Projects</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://outred.github.io/game" target="_blank" class="game-title hover:underline">Outred Game</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://vexgames.online/" target="_blank" class="game-title hover:underline">VexGames Online</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://skool.world/" target="_blank" class="game-title hover:underline">Skool.world</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://skool.gq/" target="_blank" class="game-title hover:underline">Skool.gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.typeracer.gq/" target="_blank" class="game-title hover:underline">Typeracer.gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://flipgrid.gq/" target="_blank" class="game-title hover:underline">Flipgrid.gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://r.pluralsight.gq/" target="_blank" class="game-title hover:underline">r.pluralsight.gq/</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://r.codewars.ml/" target="_blank" class="game-title hover:underline">r.codewars.ml/</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.coursera.cf/" target="_blank" class="game-title hover:underline">Coursera.cf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://whitespider.gq/" target="_blank" class="game-title hover:underline">Whitespider.gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://whitespider.gq/ebutuoy/" target="_blank" class="game-title hover:underline">Whitespider YouTube</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://tw31120071857.github.io/BCHS-Unblocked-Games-V2/Online%20Games.html" target="_blank" class="game-title hover:underline">BCHS Unblocked Games V2</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://wcpss.gq/" target="_blank" class="game-title hover:underline">WCPSS.gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://skool.pages.dev/" target="_blank" class="game-title hover:underline">Skool.pages.dev</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathhomework.pages.dev/" target="_blank" class="game-title hover:underline">Math Homework Pages</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathwizard.pages.dev/" target="_blank" class="game-title hover:underline">Math Wizard Pages</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathhomework.netlify.app/" target="_blank" class="game-title hover:underline">Math Homework Netlify</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://skool-world.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" target="_blank" class="game-title hover:underline">Skool World Translated</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://oddpvp.github.io/unblockedgames/" target="_blank" class="game-title hover:underline">Odd PVP Unblocked Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://trickjoker312.github.io/" target="_blank" class="game-title hover:underline">Trick Joker 312</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://funkymods.github.io/" target="_blank" class="game-title hover:underline">Funky Mods</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://28klotlucas2.github.io/Funkin-Html5/" target="_blank" class="game-title hover:underline">Funkin HTML5</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://luckydog7.github.io/funkinmobile/game/index.html" target="_blank" class="game-title hover:underline">Funkin Mobile</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gaming99github.github.io/" target="_blank" class="game-title hover:underline">Gaming 99 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://trickjoker312.github.io/unblockedgames/" target="_blank" class="game-title hover:underline">Trick Joker 312 Unblocked</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unblocker.whitespider.cf/" target="_blank" class="game-title hover:underline">Unblocker Whitespider .cf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unblocker.whitespider.ga/" target="_blank" class="game-title hover:underline">Unblocker Whitespider .ga</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unblocker.whitespider.ml/" target="_blank" class="game-title hover:underline">Unblocker Whitespider .ml</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unblocker.whitespider.tk/" target="_blank" class="game-title hover:underline">Unblocker Whitespider .tk</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://lioxryt.github.io/" target="_blank" class="game-title hover:underline">Lioxryt GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bgs.pages.dev/g/" target="_blank" class="game-title hover:underline">BGS Pages Dev</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.bigfootshack.tk/g/" target="_blank" class="game-title hover:underline">Bigfoot Shack .tk</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.bigfootninenineninenine.gq/g/" target="_blank" class="game-title hover:underline">Bigfoot 9999 .gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://lenardsbites.ml/g/" target="_blank" class="game-title hover:underline">Lenards Bites .ml</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.lonelytab.ml/g/" target="_blank" class="game-title hover:underline">Lonely Tab .ml</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.lonelytab.gq/g/" target="_blank" class="game-title hover:underline">Lonely Tab .gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.schoolmatheduscienceenglish.cf/g/" target="_blank" class="game-title hover:underline">School Math Edu Science English</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bigfootsgs.github.io/g/" target="_blank" class="game-title hover:underline">Bigfoots GS</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://officialbigfoot.gq/g/" target="_blank" class="game-title hover:underline">Official Bigfoot .gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.bigfoot.ga/g/" target="_blank" class="game-title hover:underline">Bigfoot .ga</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://smallfeet.tk/g/" target="_blank" class="game-title hover:underline">Small Feet .tk</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://smallfeet.ml/g/" target="_blank" class="game-title hover:underline">Small Feet .ml</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://smallfeet.gq/g/" target="_blank" class="game-title hover:underline">Small Feet .gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://smallfeet.ga/g/" target="_blank" class="game-title hover:underline">Small Feet .ga</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.bigfootninenineninenine.gq/g/" target="_blank" class="game-title hover:underline">Bigfoot 9999 .gq (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bgs.shockwave.gq/g/" target="_blank" class="game-title hover:underline">BGS Shockwave .gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bigfootslair9999.tk/g/" target="_blank" class="game-title hover:underline">Bigfoot's Lair 9999</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://b5q8vxvxvd.cf/g/" target="_blank" class="game-title hover:underline">B5q8vxvxvd .cf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://xboxcontroller.tk/g/" target="_blank" class="game-title hover:underline">Xbox Controller .tk</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.lenardsbites.cf/g/" target="_blank" class="game-title hover:underline">Lenards Bites .cf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.lenardskicks.cf/g/" target="_blank" class="game-title hover:underline">Lenards Kicks .cf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://genarcy.github.io/Pages/games.html" target="_blank" class="game-title hover:underline">Genarcy Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://skoolunblock.up.railway.app/" target="_blank" class="game-title hover:underline">Skool Unblock (Railway)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bidoofery.github.io/renov8/projects.html" target="_blank" class="game-title hover:underline">Bidoofery Renov8 Projects</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://theooofficial.github.io/myRETROGAMES/" target="_blank" class="game-title hover:underline">TheOO Official Retro Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gointerstellar.app/play.html" target="_blank" class="game-title hover:underline">GoInterstellar App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://teddblue.github.io/gamebois/" target="_blank" class="game-title hover:underline">Teddblue Gamebois</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://artclass.site/" target="_blank" class="game-title hover:underline">Artclass.site</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://jetyeh.vodka/" target="_blank" class="game-title hover:underline">Jetyeh.vodka</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://slope.faav.top/" target="_blank" class="game-title hover:underline">Slope Faav Top</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://shadowgmes.github.io/" target="_blank" class="game-title hover:underline">Shadow Games GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://dominos.buzz/play.html" target="_blank" class="game-title hover:underline">Dominos Buzz</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://fractions.interstellarmath.ink/play.html" target="_blank" class="game-title hover:underline">Fractions Interstellar Math</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unblockedswaggygames.netlify.app/" target="_blank" class="game-title hover:underline">Unblocked Swaggy Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.schooltears.ml/" target="_blank" class="game-title hover:underline">Schooltears.ml</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ds-proxy-1.darkspeed.repl.co/" target="_blank" class="game-title hover:underline">DS Proxy 1 Darkspeed</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://proxy.darkspeed.repl.co/" target="_blank" class="game-title hover:underline">Proxy Darkspeed</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://darkspeed.repl.co/games.html" target="_blank" class="game-title hover:underline">Darkspeed Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://shadowgmes.github.io/" target="_blank" class="game-title hover:underline">Shadow Games GitHub (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://genarcy.vercel.app/Pages/games.html" target="_blank" class="game-title hover:underline">Genarcy Vercel Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://funmath.club/" target="_blank" class="game-title hover:underline">Fun Math Club</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mgg658.github.io/" target="_blank" class="game-title hover:underline">MGG 658 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://oddgames.uk/" target="_blank" class="game-title hover:underline">Odd Games UK</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://oddisbest.dev/" target="_blank" class="game-title hover:underline">Odd Is Best .dev</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://funmath.club/" target="_blank" class="game-title hover:underline">Fun Math Club (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://fractions.interstellarmath.ink/play.html" target="_blank" class="game-title hover:underline">Fractions Interstellar Math (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://potion-of.invisibility.lol/play.html" target="_blank" class="game-title hover:underline">Potion of Invisibility</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://desmos.me/play.html" target="_blank" class="game-title hover:underline">Desmos.me</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://artclass.site/games.html" target="_blank" class="game-title hover:underline">Artclass.site Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gh.retronetwork.ml/" target="_blank" class="game-title hover:underline">GH Retronetwork</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://f9928793-06ce-4c41-ad0a-5558a1cd061a-4606328.cf/" target="_blank" class="game-title hover:underline">F9928793...cf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gamehub88.gq" target="_blank" class="game-title hover:underline">Gamehub 88 .gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://smdgames.github.io/" target="_blank" class="game-title hover:underline">SMD Games GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.hotcorn.ga/games/index.html" target="_blank" class="game-title hover:underline">Hotcorn Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://uk1.noblo.cc/" target="_blank" class="game-title hover:underline">UK1 Noblo.cc</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://uk2.noblo.cc/" target="_blank" class="game-title hover:underline">UK2 Noblo.cc</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://us1.noblo.cc/" target="_blank" class="game-title hover:underline">US1 Noblo.cc</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://us2.noblo.cc/" target="_blank" class="game-title hover:underline">US2 Noblo.cc</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://g.noblo.cc/" target="_blank" class="game-title hover:underline">G.Noblo.cc</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bhij.w3spaces.com/" target="_blank" class="game-title hover:underline">Bhij W3Spaces</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://monkey3three.github.io/unblocked88.github.io/" target="_blank" class="game-title hover:underline">Monkey3three Unblocked 88</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unblockedhaven.games/games?unlock" target="_blank" class="game-title hover:underline">Unblocked Haven Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mgalternative.github.io/" target="_blank" class="game-title hover:underline">MG Alternative GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathgames67.github.io/" target="_blank" class="game-title hover:underline">Math Games 67 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://newportgrizfun.netlify.app/" target="_blank" class="game-title hover:underline">Newport Griz Fun</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://tamgames.net" target="_blank" class="game-title hover:underline">TamGames.net</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://outred-io-site.vercel.app/" target="_blank" class="game-title hover:underline">Outred IO Site Vercel</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://outredio-outred.vercel.app/" target="_blank" class="game-title hover:underline">OutredIO Outred Vercel</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://outredsite-outred.vercel.app/" target="_blank" class="game-title hover:underline">OutredSite Outred Vercel</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ubg9.github.io/" target="_blank" class="game-title hover:underline">UBG9 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ubg9.com/" target="_blank" class="game-title hover:underline">UBG9.com</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://antsbackups.github.io/" target="_blank" class="game-title hover:underline">Ants Backups GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://cool-orpin.vercel.app/" target="_blank" class="game-title hover:underline">Cool Orpin Vercel</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://sneslover22.github.io/Mathews-Collection/index.html" target="_blank" class="game-title hover:underline">Mathews Collection</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://feetnetworks.netlify.app/" target="_blank" class="game-title hover:underline">Feet Networks Netlify</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mixed-pickled-soarer.glitch.me/" target="_blank" class="game-title hover:underline">Mixed Pickled Soarer</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://apricot-acoustic-seal.glitch.me/" target="_blank" class="game-title hover:underline">Apricot Acoustic Seal</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://destiny-erratic-dimple.glitch.me/" target="_blank" class="game-title hover:underline">Destiny Erratic Dimple</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://encouraging-inexpensive-polo.glitch.me/" target="_blank" class="game-title hover:underline">Encouraging Inexpensive Polo</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://veil-band-pixie.glitch.me/" target="_blank" class="game-title hover:underline">Veil Band Pixie</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.jordansmathwork.ml/gs/" target="_blank" class="game-title hover:underline">Jordan's Math Work</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://geometryspot.com/activities/" target="_blank" class="game-title hover:underline">Geometry Spot Activities</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://fatgarfield777.github.io/Games.html" target="_blank" class="game-title hover:underline">Fat Garfield 777 Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="http://david.thecallenders.com/" target="_blank" class="game-title hover:underline">David The Callenders</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://masonsunblockedgames.github.io/MasonsUnblockedGames/" target="_blank" class="game-title hover:underline">Mason's Unblocked Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://vancouver-games.github.io/" target="_blank" class="game-title hover:underline">Vancouver Games GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://whizgames.github.io/" target="_blank" class="game-title hover:underline">Whiz Games GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://dingusorg.github.io/yeet/" target="_blank" class="game-title hover:underline">Dingusorg Yeet</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://project-scythe.vercel.app/" target="_blank" class="game-title hover:underline">Project Scythe Vercel</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://hmafia.org/" target="_blank" class="game-title hover:underline">HMAFIA.org</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://getjhub.tech/" target="_blank" class="game-title hover:underline">Get JHub.tech</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://cattn.github.io/msgweb/" target="_blank" class="game-title hover:underline">Cattn Msgweb</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://a-karen-is-tricky-to-an-employee-to-understand.glitch.me/" target="_blank" class="game-title hover:underline">A Karen Is Tricky... (Glitch)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://nothing-that-does-something-i-guess.glitch.me/" target="_blank" class="game-title hover:underline">Nothing That Does Something... (Glitch)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://chhssssssss.glitch.me/" target="_blank" class="game-title hover:underline">Chhssssssss (Glitch)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://connor-is-a-salty-ken.glitch.me/" target="_blank" class="game-title hover:underline">Connor Is A Salty Ken (Glitch)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://a-ken-and-karen-are-both-mean.glitch.me/" target="_blank" class="game-title hover:underline">A Ken And Karen Are Both Mean (Glitch)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://uwu-says-ur-mom.glitch.me/" target="_blank" class="game-title hover:underline">Uwu Says Ur Mom (Glitch)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mackeylol.github.io/copyofmasite/" target="_blank" class="game-title hover:underline">Mackeylol Copy of MaSite</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://copyofmasite.vercel.app/" target="_blank" class="game-title hover:underline">Copy of MaSite Vercel</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://blue-seas.glitch.me/" target="_blank" class="game-title hover:underline">Blue Seas (Glitch)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://outred.org/" target="_blank" class="game-title hover:underline">Outred.org</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://login.discoveryeducation.cf/" target="_blank" class="game-title hover:underline">Discovery Education Login</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://app.discoveryeducation.cf/" target="_blank" class="game-title hover:underline">Discovery Education App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://help.discoveryeducation.cf/" target="_blank" class="game-title hover:underline">Discovery Education Help</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://dylanprivate.glitch.me/" target="_blank" class="game-title hover:underline">Dylan Private (Glitch)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ripple-persistent-lifter.glitch.me/" target="_blank" class="game-title hover:underline">Ripple Persistent Lifter (Glitch)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://synik.cf/" target="_blank" class="game-title hover:underline">Synik.cf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unblockedgamesheaven.brownwebdesign.com/" target="_blank" class="game-title hover:underline">Unblocked Games Heaven</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://culpix08.github.io/" target="_blank" class="game-title hover:underline">Culpix 08 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://amongusland.github.io/" target="_blank" class="game-title hover:underline">Among Us Land</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bruhmomentiv.github.io/" target="_blank" class="game-title hover:underline">Bruhmomentiv GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://emulatoros2.github.io/" target="_blank" class="game-title hover:underline">Emulator OS 2</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://EmulatorOS420.github.io" target="_blank" class="game-title hover:underline">Emulator OS 420</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://fortnitemanonfortnite.github.io" target="_blank" class="game-title hover:underline">Fortnite Man On Fortnite</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gamelff.github.io/" target="_blank" class="game-title hover:underline">Gamelff GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://jimmysaulgoodman.github.io/" target="_blank" class="game-title hover:underline">Jimmy Saul Goodman GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mekomancer.github.io/" target="_blank" class="game-title hover:underline">Mekomancer GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://patrickl4321.github.io/" target="_blank" class="game-title hover:underline">Patrick L4321 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://lioxrytbackup.github.io/" target="_blank" class="game-title hover:underline">Lioxryt Backup GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://3kh0-hel.github.io/" target="_blank" class="game-title hover:underline">3kh0-hel GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://658658658.github.io/" target="_blank" class="game-title hover:underline">658658658 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ice-wallo-come.github.io/" target="_blank" class="game-title hover:underline">Ice Wallo Come GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="http://www.bingus.ml/" target="_blank" class="game-title hover:underline">Bingus.ml</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mgg658.github.io/" target="_blank" class="game-title hover:underline">MGG 658 GitHub (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mountain-game-games.github.io/" target="_blank" class="game-title hover:underline">Mountain Game Games GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mountjustin.github.io/" target="_blank" class="game-title hover:underline">Mount Justin GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://3kh04ever.github.io/" target="_blank" class="game-title hover:underline">3kh04ever GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://angrytree0.github.io/" target="_blank" class="game-title hover:underline">Angry Tree 0 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://3kh0preview.github.io/" target="_blank" class="game-title hover:underline">3kh0 Preview GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://5kh0.github.io/" target="_blank" class="game-title hover:underline">5kh0 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://69kh0.github.io/" target="_blank" class="game-title hover:underline">69kh0 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://75kh0.github.io/" target="_blank" class="game-title hover:underline">75kh0 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://prestonwitzel.github.io/" target="_blank" class="game-title hover:underline">Preston Witzel GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathgames67.github.io/" target="_blank" class="game-title hover:underline">Math Games 67 GitHub (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mgalternative.github.io/" target="_blank" class="game-title hover:underline">MG Alternative GitHub (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mgunblocked.github.io/" target="_blank" class="game-title hover:underline">MG Unblocked GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://rx1ncreations.github.io/" target="_blank" class="game-title hover:underline">Rx1n Creations GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://lps7x.csb.app/" target="_blank" class="game-title hover:underline">LPS7x CSB App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://skoolgq.github.io/" target="_blank" class="game-title hover:underline">Skoolgq GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unblockedhaven.games/?unlock" target="_blank" class="game-title hover:underline">Unblocked Haven Games (Unlock)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://0ntimer.github.io/" target="_blank" class="game-title hover:underline">0ntimer GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://nowgg.me/" target="_blank" class="game-title hover:underline">Now.gg</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://railingames.github.io/classes.html" target="_blank" class="game-title hover:underline">Railingames Classes</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://omnitechnicity.github.io/neuralekzz/flash/index.html" target="_blank" class="game-title hover:underline">Omnitechnicity Neuralekzz Flash</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://taco-browser.netlify.app/#gsc.tab=0" target="_blank" class="game-title hover:underline">Taco Browser Netlify</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://queserishot-in4.cyclic.app/play.html" target="_blank" class="game-title hover:underline">Queserishot Cyclic App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://the-i-eat-water-return.onrender.com/" target="_blank" class="game-title hover:underline">The I Eat Water Return</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://harvard-streetview.onrender.com/play.html" target="_blank" class="game-title hover:underline">Harvard Streetview</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-vi8j.onrender.com/play.html" target="_blank" class="game-title hover:underline">Interstellar VI8J</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-8m0x.onrender.com/play.html" target="_blank" class="game-title hover:underline">Interstellar 8M0X</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-8dl7.onrender.com/play.html" target="_blank" class="game-title hover:underline">Interstellar 8DL7</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://orcais-thebest.onrender.com/play.html" target="_blank" class="game-title hover:underline">Orca Is The Best</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-77q7.onrender.com/play.html" target="_blank" class="game-title hover:underline">Interstellar 77Q7</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://login.algebraxyz.online/play.html" target="_blank" class="game-title hover:underline">AlgebraXYZ Online Login</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://www.rateavon.je/error.php" target="_blank" class="game-title hover:underline">Rateavon.je Error</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://hhsgames.netlify.app/" target="_blank" class="game-title hover:underline">HHS Games Netlify</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://login.algebraxyz.com/play.html" target="_blank" class="game-title hover:underline">AlgebraXYZ.com Login</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ill.tantrum.org/" target="_blank" class="game-title hover:underline">Ill Tantrum.org</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathclass.ballbang.wiki/" target="_blank" class="game-title hover:underline">Math Class Ballbang Wiki</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://phantoms.gq/" target="_blank" class="game-title hover:underline">Phantoms.gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://hawaii.cf/" target="_blank" class="game-title hover:underline">Hawaii.cf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bluesky-beat-me-on-the-leader-board.onrender.com/play.html" target="_blank" class="game-title hover:underline">Bluesky Beat Me On The Leaderboard</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://geometry.answerozi.com/" target="_blank" class="game-title hover:underline">Geometry Answerozi</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://helpingverbs.online/" target="_blank" class="game-title hover:underline">Helping Verbs Online</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bubbocarriesinterstellar.onrender.com/play.html" target="_blank" class="game-title hover:underline">Bubbo Carries Interstellar</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://onichaansenpai.onrender.com/" target="_blank" class="game-title hover:underline">Onichaansenpai</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://classesfromgoogle.onrender.com/play.html" target="_blank" class="game-title hover:underline">Classes From Google</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://scarycakeismakingproxies.onrender.com/play.html" target="_blank" class="game-title hover:underline">Scarycake Is Making Proxies</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://axebodyspray.onrender.com/play.html" target="_blank" class="game-title hover:underline">Axe Body Spray</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://googie-chrome-tips.onrender.com/play.html" target="_blank" class="game-title hover:underline">Googie Chrome Tips</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://pdf-to-doc.onrender.com/play.html" target="_blank" class="game-title hover:underline">PDF to DOC</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://edquzzle.onrender.com/play.html" target="_blank" class="game-title hover:underline">Edquzzle</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://annefrank.onrender.com/play.html" target="_blank" class="game-title hover:underline">Anne Frank</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://kingvon.onrender.com/play.html" target="_blank" class="game-title hover:underline">King Von</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://intastellabosko.onrender.com/play.html" target="_blank" class="game-title hover:underline">Intastella Bosko</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bubboisboskospapa.onrender.com/play.html" target="_blank" class="game-title hover:underline">Bubbo Is Bosko's Papa</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://edpuzzle-gu36.onrender.com/play.html" target="_blank" class="game-title hover:underline">Edpuzzle GU36</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://steamepkproject.onrender.com/play.html" target="_blank" class="game-title hover:underline">Steam EPK Project</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://boskunblock44.onrender.com/play.html" target="_blank" class="game-title hover:underline">Boskunblock 44</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://boks.onrender.com/play.html" target="_blank" class="game-title hover:underline">Boks</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://four4unblockbosko.onrender.com/play.html" target="_blank" class="game-title hover:underline">Four4 Unblock Bosko</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://timmah.onrender.com/play.html" target="_blank" class="game-title hover:underline">Timmah</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bokss.onrender.com/play.html" target="_blank" class="game-title hover:underline">Bokss</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://four4underimpressionbosko.onrender.com/play.html" target="_blank" class="game-title hover:underline">Four4 Under Impression Bosko</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://fewweeksagobosko.onrender.com/play.html" target="_blank" class="game-title hover:underline">Few Weeks Ago Bosko</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bosklol444.onrender.com/play.html" target="_blank" class="game-title hover:underline">Bosklol 444</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bosklol44b.onrender.com/play.html" target="_blank" class="game-title hover:underline">Bosklol 44B</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bvskv44.onrender.com/play.html" target="_blank" class="game-title hover:underline">Bvskv 44</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://animeisgoatedunlikeyoermum.onrender.com/play.html" target="_blank" class="game-title hover:underline">Anime Is Goated Unlike Yoer Mum</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://aces-ashes.onrender.com/play.html" target="_blank" class="game-title hover:underline">Aces Ashes</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-p03f.onrender.com/play.html" target="_blank" class="game-title hover:underline">Interstellar P03F</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://rzoom12sucksballs.onrender.com/play.html" target="_blank" class="game-title hover:underline">Rzoom12 Sucks Balls</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://the-region-where-your-web-service-runs.onrender.com/play.html" target="_blank" class="game-title hover:underline">The Region Where Your Web Service Runs</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://what-color-is-your-buggati.onrender.com/play.html" target="_blank" class="game-title hover:underline">What Color Is Your Buggati</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-ciyi.onrender.com/play.html" target="_blank" class="game-title hover:underline">Interstellar CIYI</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://yoer-mum-is-very-yum.onrender.com/play.html" target="_blank" class="game-title hover:underline">Yoer Mum Is Very Yum</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://loudoununitedfc.onrender.com/play.html" target="_blank" class="game-title hover:underline">Loudoun United FC</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://studybuddy-9frs.onrender.com/play.html" target="_blank" class="game-title hover:underline">Study Buddy 9FRS</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://zoology.onrender.com/play.html" target="_blank" class="game-title hover:underline">Zoology</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://tutor-com.onrender.com/play.html" target="_blank" class="game-title hover:underline">Tutor.com</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://tophomeworkhelper.onrender.com/play.html" target="_blank" class="game-title hover:underline">Top Homework Helper</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://khanacademy.onrender.com/play.html" target="_blank" class="game-title hover:underline">Khan Academy</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://byjus-learning.onrender.com/play.html" target="_blank" class="game-title hover:underline">Byjus Learning</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://covid-19-was-a-very-bad-virus.onrender.com/play.html" target="_blank" class="game-title hover:underline">Covid-19 Was A Very Bad Virus</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-dkia.onrender.com/2.html" target="_blank" class="game-title hover:underline">Interstellar DKIA</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://manavisbald.strangled.net/play.html" target="_blank" class="game-title hover:underline">Manavisbald Strangled Net</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://i-eat-big-poopy.onrender.com/play.html" target="_blank" class="game-title hover:underline">I Eat Big Poopy</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://unblockedgames66.github.io/" target="_blank" class="game-title hover:underline">Unblocked Games 66</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://john-cena.onrender.com/play" target="_blank" class="game-title hover:underline">John Cena</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://sus-amogus.onrender.com/play" target="_blank" class="game-title hover:underline">Sus Amogus</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://trickjoker-is-cool.onrender.com/play" target="_blank" class="game-title hover:underline">Trickjoker Is Cool</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://your-mom-postalservice.onrender.com/play.html" target="_blank" class="game-title hover:underline">Your Mom Postal Service</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://choilieng.com/" target="_blank" class="game-title hover:underline">Choilieng.com</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://nabilubg.github.io/pages/games.html" target="_blank" class="game-title hover:underline">Nabil UBG Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://nabilmirror1.netlify.app/pages/games.html" target="_blank" class="game-title hover:underline">Nabil Mirror 1 Netlify</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://nabilv5.netlify.app/pages/games.html" target="_blank" class="game-title hover:underline">Nabil V5 Netlify</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://nabilmirror2.netlify.app/pages/games.html" target="_blank" class="game-title hover:underline">Nabil Mirror 2 Netlify</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://stephen-is-cool.onrender.com/games" target="_blank" class="game-title hover:underline">Stephen Is Cool Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://jermaine-is-cool.onrender.com/" target="_blank" class="game-title hover:underline">Jermaine Is Cool</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://tristan-thorne-is-cool.onrender.com/play" target="_blank" class="game-title hover:underline">Tristan Thorne Is Cool</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://honored-pickled-locust.glitch.me/" target="_blank" class="game-title hover:underline">Honored Pickled Locust</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ballbang-pro45.com/" target="_blank" class="game-title hover:underline">Ballbang Pro 45</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://pr0xxxy.ballbang-pro1.com/" target="_blank" class="game-title hover:underline">Pr0xxxy Ballbang Pro1</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://br0si.ballbang-app59.com/" target="_blank" class="game-title hover:underline">Br0si Ballbang App 59</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://br0si.ballbang-app21.com/" target="_blank" class="game-title hover:underline">Br0si Ballbang App 21</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://fr4vtgf.onrender.com/play.html" target="_blank" class="game-title hover:underline">Fr4vtgf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://justreally.farted.net/play" target="_blank" class="game-title hover:underline">Just Really Farted Net</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gointerstellar.cloudwatch.net/play" target="_blank" class="game-title hover:underline">GoInterstellar Cloudwatch (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bubbo.strangled.net/play" target="_blank" class="game-title hover:underline">Bubbo Strangled Net</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://techgai.com/" target="_blank" class="game-title hover:underline">Techgai.com</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://metal.tree-board.net/" target="_blank" class="game-title hover:underline">Metal Tree Board Net</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://geoquiz.gq/" target="_blank" class="game-title hover:underline">Geoquiz.gq</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://login.prospectpointbooks.com/" target="_blank" class="game-title hover:underline">Prospect Point Books Login</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://join.gettysburgmath.org/" target="_blank" class="game-title hover:underline">Gettysburg Math Join</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://irepel.cf/" target="_blank" class="game-title hover:underline">Irepel.cf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://play.irepel.com/" target="_blank" class="game-title hover:underline">Play Irepel.com</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://weblfg.vercel.app/games" target="_blank" class="game-title hover:underline">Web LFG Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ubg100.vercel.app/games" target="_blank" class="game-title hover:underline">UBG 100 Vercel Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ubg.vercel.app/games" target="_blank" class="game-title hover:underline">UBG Vercel Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://supermath84.vercel.app/games" target="_blank" class="game-title hover:underline">Super Math 84 Vercel Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://othermgwebsite.github.io/" target="_blank" class="game-title hover:underline">Other MG Website GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://all-realunblocker.onrender.com/play.html" target="_blank" class="game-title hover:underline">All Real Unblocker</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://crocsweb.onrender.com/play" target="_blank" class="game-title hover:underline">Crocs Web</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-dz94.onrender.com/play" target="_blank" class="game-title hover:underline">Interstellar DZ94</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://john-cena-sus.onrender.com/play" target="_blank" class="game-title hover:underline">John Cena Sus</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-a0dr.onrender.com/play" target="_blank" class="game-title hover:underline">Interstellar A0DR</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bubbo.farted.net/play" target="_blank" class="game-title hover:underline">Bubbo Farted Net</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://watergirlandfun123.onrender.com/play" target="_blank" class="game-title hover:underline">Water Girl And Fun 123</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://coolclownsininstaltor.onrender.com/play" target="_blank" class="game-title hover:underline">Cool Clowns In Instaltor</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://djfuntololmicasadf.onrender.com/play" target="_blank" class="game-title hover:underline">DJ Funtololmicasadf</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://amongtablettornadoel.onrender.com/play" target="_blank" class="game-title hover:underline">Among Tablet Tornadoel</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bradwithbrainscloths.onrender.com/play" target="_blank" class="game-title hover:underline">Brad With Brains Cloths</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://iputheforgisoncooltorfunxuxmm.onrender.com/play" target="_blank" class="game-title hover:underline">Iputheforgisoncooltorfunxuxmm</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://fourskepbuttonsmangos.onrender.com/play" target="_blank" class="game-title hover:underline">Four Skep Buttons Mangos</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://spiinsidierrelssedmeganfi.onrender.com/play" target="_blank" class="game-title hover:underline">Spiinsidierrelssedmeganfi</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://wapplelightswitchsarh.onrender.com/play" target="_blank" class="game-title hover:underline">Wapple Lightswitch Sarh</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://wildcotwichaseproch.onrender.com/play" target="_blank" class="game-title hover:underline">Wild Cotwichase Proch</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://safetorbasemment.onrender.com/play" target="_blank" class="game-title hover:underline">Safe Torbasemment</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://iphone14realisbscupold.onrender.com/play" target="_blank" class="game-title hover:underline">iPhone 14 Realisbscupold</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://idkwhatgotem360codm.onrender.com/play" target="_blank" class="game-title hover:underline">IDK What Gotem 360 Codm</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://danworksforlaufhs123.onrender.com/play" target="_blank" class="game-title hover:underline">Dan Works For Laufhs 123</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://autodocerfilledinter.onrender.com/play" target="_blank" class="game-title hover:underline">Autodocer Filled Inter</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://o8iuiuufunsttormyeeyt.onrender.com/play" target="_blank" class="game-title hover:underline">O8iuiuufunsttormyeeyt</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://reemoigmoidredit.onrender.com/play" target="_blank" class="game-title hover:underline">Reemoigmoidredit</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://cyan-armadillo-hem.cyclic.app/play" target="_blank" class="game-title hover:underline">Cyan Armadillo Hem</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-is-cool.onrender.com/play.html" target="_blank" class="game-title hover:underline">Interstellar Is Cool</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://vandeventer-middle-school-proxy-onrender.onrender.com/play" target="_blank" class="game-title hover:underline">Vandeventer Middle School Proxy</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://vms-for-the-win.onrender.com/play" target="_blank" class="game-title hover:underline">VMS For The Win</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://doggy-stylelol.onrender.com/play" target="_blank" class="game-title hover:underline">Doggy Style Lol</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://aintnorightway-justthewrongway-iknow.onrender.com/play" target="_blank" class="game-title hover:underline">Aint No Right Way Just The Wrong Way I Know</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://just-one-of-the-guys.onrender.com/play" target="_blank" class="game-title hover:underline">Just One Of The Guys</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://hussien-got-0-rizz.onrender.com/play" target="_blank" class="game-title hover:underline">Hussien Got 0 Rizz</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://job-findings-online.onrender.com/play" target="_blank" class="game-title hover:underline">Job Findings Online</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ima-big-dog-yea-you-a-mouse.onrender.com/play.html" target="_blank" class="game-title hover:underline">Ima Big Dog Yea You A Mouse</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://abc-def-ghi-jkl-mnop-qrs-tuv-wxyz.onrender.com/play.html" target="_blank" class="game-title hover:underline">ABC DEF GHI JKL MNOP QRS TUV WXYZ</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-lnyg.onrender.com/play" target="_blank" class="game-title hover:underline">Interstellar LNYG</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://stellarinter-interstellar-thisiscrazy.onrender.com/play" target="_blank" class="game-title hover:underline">Stellar Interstellar This Is Crazy</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-tmkp.onrender.com/play" target="_blank" class="game-title hover:underline">Interstellar TMKP</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-65yr.onrender.com/play" target="_blank" class="game-title hover:underline">Interstellar 65YR</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gointerstellar.cloudwatch.net/play" target="_blank" class="game-title hover:underline">Go Interstellar Cloudwatch</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://geometryspot.onrender.com/play" target="_blank" class="game-title hover:underline">Geometry Spot</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathpepe-calculator-algebra-onmathrender.onrender.com/play" target="_blank" class="game-title hover:underline">Math Pepe Calculator Algebra</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://g00g1ec1assr00m-gogle-com.onrender.com/play" target="_blank" class="game-title hover:underline">Google Classroom</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://how-can-a-clam-cram-in-a-clean-cream-can.onrender.com/" target="_blank" class="game-title hover:underline">How Can A Clam Cram In A Clean Cream Can</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://hotcheeto-ifyougotlayyougotfrito.onrender.com/" target="_blank" class="game-title hover:underline">Hotcheeto If You Got Lay You Got Frito</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bub-yougoodbro-because-your-grades-been.onrender.com/" target="_blank" class="game-title hover:underline">Bub You Good Bro Because Your Grades Been</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://dirty-thirty-naruto-blue-birdy.onrender.com/" target="_blank" class="game-title hover:underline">Dirty Thirty Naruto Blue Birdy</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://public-vms-proxy-onrender-com.onrender.com/" target="_blank" class="game-title hover:underline">Public VMS Proxy On Render</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://vms-49n4.onrender.com/" target="_blank" class="game-title hover:underline">VMS 49N4</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://lightspeed-cant-block-us-all.onrender.com/" target="_blank" class="game-title hover:underline">Lightspeed Can't Block Us All</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://allreal-interstellar-8dla.onrender.com/" target="_blank" class="game-title hover:underline">All Real Interstellar 8DLA</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://on-render-com.onrender.com/" target="_blank" class="game-title hover:underline">On Render.com</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://shawties-like-a-melody-inmyhead.onrender.com/" target="_blank" class="game-title hover:underline">Shawties Like A Melody In My Head</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://flyawaybear-and-crownyui-have-0rizz.onender.com/" target="_blank" class="game-title hover:underline">Flyawaybear And Crownyui Have 0 Rizz</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://goodnight-march-twentysix.onrender.com/" target="_blank" class="game-title hover:underline">Goodnight March Twenty Six</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bring-back-cafeteria-strawberry-milk.onrender.com/" target="_blank" class="game-title hover:underline">Bring Back Cafeteria Strawberry Milk</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://cafeteria-izze-sparkling-juice-should-be.onrender.com/" target="_blank" class="game-title hover:underline">Cafeteria Izze Sparkling Juice Should Be</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://zero0001.onrender.com/" target="_blank" class="game-title hover:underline">Zero 0001</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://hikaru-nakamura.onrender.com/" target="_blank" class="game-title hover:underline">Hikaru Nakamura</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://i-cant-believe-chess-got-blocked-omg.onrender.com/" target="_blank" class="game-title hover:underline">I Can't Believe Chess Got Blocked OMG</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://jack-black-had-a-heart-attack.onrender.com/" target="_blank" class="game-title hover:underline">Jack Black Had A Heart Attack</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://github-repository-info.onrender.com/" target="_blank" class="game-title hover:underline">GitHub Repository Info</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-s2ie.onrender.com/" target="_blank" class="game-title hover:underline">Interstellar S2IE</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-5ytj.onrender.com/" target="_blank" class="game-title hover:underline">Interstellar 5YTJ</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://please-allow-this-to-work.onrender.com/" target="_blank" class="game-title hover:underline">Please Allow This To Work</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://dark-squire-340-elixir-build.onrender.com/" target="_blank" class="game-title hover:underline">Dark Squire 340 Elixir Build</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://beasty-furry-unconditional-shots.onrender.com/" target="_blank" class="game-title hover:underline">Beasty Furry Unconditional Shots</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ninja-art-mind-transfer-jutsu.onrender.com" target="_blank" class="game-title hover:underline">Ninja Art Mind Transfer Jutsu</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://andrew-is-a-monkey-albino.onrender.com/" target="_blank" class="game-title hover:underline">Andrew Is A Monkey Albino</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://jerome-cullilap.onrender.com/" target="_blank" class="game-title hover:underline">Jerome Cullilap</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bai-antioxidant-infusion-kula-watermelon.onrender.com/" target="_blank" class="game-title hover:underline">Bai Antioxidant Infusion Kula Watermelon</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://zackariya-adam-mohammed-ahmed-ali-aggour.onrender.com/" target="_blank" class="game-title hover:underline">Zackariya Adam Mohammed Ahmed Ali Aggour</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://julius-sqwontinklebin-bitlife.onrender.com/" target="_blank" class="game-title hover:underline">Julius Sqwontinklebin Bitlife</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://school-doctor-math-xyz.onrender.com/play.html" target="_blank" class="game-title hover:underline">School Doctor Math XYZ</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://go-to-school-every-day.onrender.com/play.html" target="_blank" class="game-title hover:underline">Go To School Every Day</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://please-go-to-school-every-day.onrender.com/play.html" target="_blank" class="game-title hover:underline">Please Go To School Every Day</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://apple-wristband-color.onrender.com/play.html" target="_blank" class="game-title hover:underline">Apple Wristband Color</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://hot-take-gimkit-is-better-than-kahoot.onrender.com/play.html" target="_blank" class="game-title hover:underline">Hot Take Gimkit Is Better Than Kahoot</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://free-chimera-he-solos-onrender-com.onrender.com/play" target="_blank" class="game-title hover:underline">Free Chimera He Solos</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://hehehehaw-all-real.onrender.com/play.html" target="_blank" class="game-title hover:underline">Hehehehaw All Real</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-5qck.onrender.com/play.html" target="_blank" class="game-title hover:underline">Interstellar 5QCK</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://iscouldbeis.onrender.com/play.html" target="_blank" class="game-title hover:underline">Is Could Be Is</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://jjsfamily-yes.onrender.com/play.html" target="_blank" class="game-title hover:underline">JJs Family Yes</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://if-interstellar-works-dm-for-a-private.onrender.com/play.html" target="_blank" class="game-title hover:underline">If Interstellar Works DM For A Private</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://daniel-likes-bluelock.onrender.com/play.html" target="_blank" class="game-title hover:underline">Daniel Likes Bluelock</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bluelock-vrs-spirted-away-which-better.onrender.com/play.html" target="_blank" class="game-title hover:underline">Bluelock VRS Spirited Away Which Better</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://petsimx-fallingdown-ngl.onrender.com/play.html" target="_blank" class="game-title hover:underline">Petsimx Fallingdown NGL</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://i-be-washing-dishes-fr.onrender.com/play.html" target="_blank" class="game-title hover:underline">I Be Washing Dishes Fr</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://elegant-lamb-cowboy-boots.cyclic.app/play.html" target="_blank" class="game-title hover:underline">Elegant Lamb Cowboy Boots</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathematics.info.gf/play.html" target="_blank" class="game-title hover:underline">Mathematics Info GF</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://norton-security-and-malware-protection.onrender.com/play.html" target="_blank" class="game-title hover:underline">Norton Security And Malware Protection</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bubbo-in-plane-because-he-flyaway.onrender.com/play.html" target="_blank" class="game-title hover:underline">Bubbo In Plane Because He Flyaway</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://honeycomb-facts-and-features.onrender.com/play.html" target="_blank" class="game-title hover:underline">Honeycomb Facts And Features</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://you-have-no-aim.onrender.com/play" target="_blank" class="game-title hover:underline">You Have No Aim</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gmod.w3spaces.com/" target="_blank" class="game-title hover:underline">GMOD W3Spaces</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://schoolfinding.w3spaces.com/" target="_blank" class="game-title hover:underline">School Finding W3Spaces</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://longishlettuce.fr.to/play.html" target="_blank" class="game-title hover:underline">Longish Lettuce</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://zacks-site-theadvancedmethod.onrender.com/play" target="_blank" class="game-title hover:underline">Zacks Site The Advanced Method</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://canned-urine-cyclic-app.onrender.com/play.html" target="_blank" class="game-title hover:underline">Canned Urine Cyclic App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://chromebook-catastrophe.onrender.com/play.html" target="_blank" class="game-title hover:underline">Chromebook Catastrophe</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://screw-algebra.onrender.com/play.html" target="_blank" class="game-title hover:underline">Screw Algebra</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://the-site-thingy.onrender.com/play.html" target="_blank" class="game-title hover:underline">The Site Thingy</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://ocean.ecosys.eu/play.html" target="_blank" class="game-title hover:underline">Ocean Ecosys EU</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathematics.info.gf/play.html" target="_blank" class="game-title hover:underline">Mathematics Info GF (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://computers.bot.nu/play.html" target="_blank" class="game-title hover:underline">Computers Bot Nu</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://japan.computersforpeace.net/play.html" target="_blank" class="game-title hover:underline">Japan Computers For Peace</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellarontop.fr.to/play.html" target="_blank" class="game-title hover:underline">Interstellar On Top</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://learn.qreg.net/" target="_blank" class="game-title hover:underline">Learn QReg.net</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://shiny.star.is/" target="_blank" class="game-title hover:underline">Shiny Star Is</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://platformerdotio.co/" target="_blank" class="game-title hover:underline">Platformer.io</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://cybriagames.com/" target="_blank" class="game-title hover:underline">Cybria Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://algebra.ultsrv.com/" target="_blank" class="game-title hover:underline">Algebra Ultrsrv.com</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://wjpzp6-8080.csb.app/play" target="_blank" class="game-title hover:underline">WJPZP6 CSB App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://techno-never.dies.minecraftpotato.com/" target="_blank" class="game-title hover:underline">Techno Never Dies Minecraft Potato</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://yummyfood-tk.vercel.app/play.html" target="_blank" class="game-title hover:underline">Yummy Food .tk (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://twagner-25-onrender.onrender.com/play.html" target="_blank" class="game-title hover:underline">Twagner 25 Onrender (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathcaculator.site/" target="_blank" class="game-title hover:underline">Math Calculator.site</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://glatic.games/" target="_blank" class="game-title hover:underline">Glatic Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://the-glatics.github.io/glaticgames/" target="_blank" class="game-title hover:underline">The Glatics GitHub Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://flushed.cyou/" target="_blank" class="game-title hover:underline">Flushed.cyou</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-nkmi.onrender.com/play" target="_blank" class="game-title hover:underline">Interstellar NKMI (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://winterstellar.s1monwork.ga/play" target="_blank" class="game-title hover:underline">Winterstellar S1monwork</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://givememod.s1monwork.ga/play" target="_blank" class="game-title hover:underline">Give Me Mod S1monwork</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://whydidntigetmod.s1monwork.ga/play" target="_blank" class="game-title hover:underline">Why Didn't I Get Mod S1monwork</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://someoneusingaigotacceptedbutididnt.s1monwork.ga/play" target="_blank" class="game-title hover:underline">Someone Using AI Got Accepted But I Didn't</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://pleasebubgivememod.hahalol15.online/play" target="_blank" class="game-title hover:underline">Please Bub Give Me Mod Hahalol 15</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellar-nkmi.onrender.com/play" target="_blank" class="game-title hover:underline">Interstellar NKMI (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://purepro4561.github.io" target="_blank" class="game-title hover:underline">Pure Pro 4561 GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://obliged-gisele-thetatertotgod.koyeb.app/" target="_blank" class="game-title hover:underline">Obliged Gisele The Tatertot God</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://yummyfood-tk.vercel.app/play.html" target="_blank" class="game-title hover:underline">Yummy Food .tk (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://twagner-25-onrender.onrender.com/play.html" target="_blank" class="game-title hover:underline">Twagner 25 Onrender (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://1v4irc-8080.csb.app/" target="_blank" class="game-title hover:underline">1V4IRC CSB App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://c7v25h-8080.csb.app/" target="_blank" class="game-title hover:underline">C7V25H CSB App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://fs94yc-8080.csb.app/" target="_blank" class="game-title hover:underline">FS94YC CSB App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://irunblocked.asia/" target="_blank" class="game-title hover:underline">IR Unblocked Asia</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gay-lovers.netlify.app/#/search/movie" target="_blank" class="game-title hover:underline">Gay Lovers Netlify</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://rpndocuments.netlify.app/#/search/movie" target="_blank" class="game-title hover:underline">RPN Documents Netlify</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://scram.onrender.com/nature" target="_blank" class="game-title hover:underline">Scram Nature</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bob-d5pr.onrender.com/" target="_blank" class="game-title hover:underline">Bob D5PR</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bob-awesome-e1lq.onrender.com/" target="_blank" class="game-title hover:underline">Bob Awesome E1LQ</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://render-cant-ban-me.onrender.com/" target="_blank" class="game-title hover:underline">Render Can't Ban Me</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://fp2lyq-8080.csb.app/" target="_blank" class="game-title hover:underline">FP2LYQ CSB App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://qdtjde-8080.csb.app/" target="_blank" class="game-title hover:underline">QDTJDE CSB App</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://rocketlea6e01.onrender.com/" target="_blank" class="game-title hover:underline">Rocket Lea6e01</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://paycheckgange.onrender.com/" target="_blank" class="game-title hover:underline">Paycheck Gange</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://isinterstellarcool.onrender.com/" target="_blank" class="game-title hover:underline">Is Interstellar Cool</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://caspy-leftu.onrender.com/" target="_blank" class="game-title hover:underline">Caspy Leftu</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://nbmsreal.onrender.com/" target="_blank" class="game-title hover:underline">NBMS Real</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://asparagusmath.onrender.com/" target="_blank" class="game-title hover:underline">Asparagus Math</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://newinterstellar.onrender.com/" target="_blank" class="game-title hover:underline">New Interstellar</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://korb.nard.ca/" target="_blank" class="game-title hover:underline">Korb Nard.ca</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://beautyof.backriverphotography.com/" target="_blank" class="game-title hover:underline">Beauty Of Backriver Photography</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://diet.fitnessdieta.com/" target="_blank" class="game-title hover:underline">Diet Fitness Dieta</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://deviouslink.onrender.com/" target="_blank" class="game-title hover:underline">Devious Link</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://long-puce-sheep-gown.cyclic.app/" target="_blank" class="game-title hover:underline">Long Puce Sheep Gown</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://gtgt.onrender.com/" target="_blank" class="game-title hover:underline">GTGT</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://amongthehidden.onrender.com/" target="_blank" class="game-title hover:underline">Among The Hidden</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://freebooks.onrender.com/" target="_blank" class="game-title hover:underline">Free Books</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://interstellareducationfree.onrender.com/" target="_blank" class="game-title hover:underline">Interstellar Education Free</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://studyguides.onrender.com/" target="_blank" class="game-title hover:underline">Study Guides</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://cusotmijnterstellar.onrender.com/" target="_blank" class="game-title hover:underline">Cusotmijnterstellar</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://funnydadjokes.onrender.com/" target="_blank" class="game-title hover:underline">Funny Dad Jokes</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://derpmandev.uk.ms/unblocked-games/" target="_blank" class="game-title hover:underline">Derpmandev Unblocked Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://website-v2-ltzv.onrender.com/games" target="_blank" class="game-title hover:underline">Website V2 Ltzv Games</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://nate-games.github.io/0/g/" target="_blank" class="game-title hover:underline">Nate Games GitHub</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://cosmicgames-11.onrender.com/" target="_blank" class="game-title hover:underline">Cosmic Games 11</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://pakupaku.bounceme.net/" target="_blank" class="game-title hover:underline">Pakupaku Bounceme</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://rammer.rude.li/" target="_blank" class="game-title hover:underline">Rammer Rude Li</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://photography.ryanandjen.org/" target="_blank" class="game-title hover:underline">Photography Ryan And Jen</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://chemistry.prs7.org/" target="_blank" class="game-title hover:underline">Chemistry PRS7.org</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://cdn.tomahawkchurch.org/" target="_blank" class="game-title hover:underline">CDN Tomahawk Church</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://chemistry.prs7.org/" target="_blank" class="game-title hover:underline">Chemistry PRS7.org (Duplicate)</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://i-hate-school-lol.hop.sh/" target="_blank" class="game-title hover:underline">I Hate School LOL</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://coal-uranium-plutonium.vercel.app/" target="_blank" class="game-title hover:underline">Coal Uranium Plutonium</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://tasty-rock.hop.sh/" target="_blank" class="game-title hover:underline">Tasty Rock</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://69.eightgrade.com/" target="_blank" class="game-title hover:underline">69 Eight Grade</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://someone.fairuse.org/" target="_blank" class="game-title hover:underline">Someone Fair Use</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://sword.msg.boats/" target="_blank" class="game-title hover:underline">Sword MSG Boats</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://selenite.cc/" target="_blank" class="game-title hover:underline">Selenite.cc</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://selenite.skysthelimit.dev/" target="_blank" class="game-title hover:underline">Selenite Sky Is The Limit Dev</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://all-about-science.onrender.com/" target="_blank" class="game-title hover:underline">All About Science</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://robotics-docs.onrender.com/" target="_blank" class="game-title hover:underline">Robotics Docs</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://contact.deleesportsmedicine.com/" target="_blank" class="game-title hover:underline">Contact Delee Sports Medicine</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://learn-at.undo.it/" target="_blank" class="game-title hover:underline">Learn At Undo It</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://fediverse.faefox.org/" target="_blank" class="game-title hover:underline">Fediverse Faefox.org</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://projects.blueshadows.cl/" target="_blank" class="game-title hover:underline">Projects Blueshadows.cl</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://contact.zverovich.net/" target="_blank" class="game-title hover:underline">Contact Zverovich.net</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://nc.is-a.super-cool.dev/" target="_blank" class="game-title hover:underline">NC Is A Super Cool Dev</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://mathstudy.one/msgweb/" target="_blank" class="game-title hover:underline">Math Study One Msgweb</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://op1um.pages.dev/" target="_blank" class="game-title hover:underline">Op1um Pages Dev</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://opium-games.com/" target="_blank" class="game-title hover:underline">Opium Games.com</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://opium.cybriatech.dev/" target="_blank" class="game-title hover:underline">Opium Cybriatech Dev</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://opium-games.onrender.com/" target="_blank" class="game-title hover:underline">Opium Games Onrender</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+      <li class="game-card">
+        <a href="https://bewildered-tweed-jacket-pike.cyclic.app/" target="_blank" class="game-title hover:underline">Bewildered Tweed Jacket Pike</a>
+        <span class="game-status status-unknown">UNKNOWN ❓</span>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="mt-auto py-6 text-sm text-gray-500 text-center border-t border-gray-700">
+    Made with ❤️ by Edward :)
+  </footer>
+</body>
+</html>
